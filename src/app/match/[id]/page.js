@@ -5,6 +5,7 @@ import { matches } from '@/lib/data/mockData';
 import Link from 'next/link';
 import Image from 'next/image';
 
+
 export default function MatchDetail() {
   const { id } = useParams();
   const match = matches.find(m => m.id === parseInt(id)) || matches[0];
